@@ -1,18 +1,13 @@
-/**
- * Module dependencies.
- */
+
 
 var express = require('express')
-var routes = require('routes')
-var http = require('http');
-
 var app = express();
-var server = app.listen(3000);
+var path = require('path');
 
-// respond with "hello world" when a GET request is made to the homepage
-app.get('/', function(req, res) {
-  res.send('hello world');
-});
+// app.use(express.static(__dirname='/../client'));
+var pathName = '/Users/udaraweerasinghege/personal/BattleHacks/paypalCalc/client'
 
+app.use(express.static(pathName));
 
+app.listen(3000);
 console.log("Express server listening on port 3000");
