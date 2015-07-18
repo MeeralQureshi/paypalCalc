@@ -1,5 +1,44 @@
 <html>
-    <div>
-        Hi Hello
+    <head>
+        <style type="text/css">
+
+        body {
+            background-repeat: no-repeat;
+
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="uikit.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript" src="options.js"></script>
+    </head>
+    <body background="Blue_border.png">
+        <div align = "center">
+            <img src="PayShareLogo.png" class="my_image" align="center">
+        </div>
+
+         <div align = "center" class="uk-form-row">
+            <input type="text" placeholder="Enter Name" class = "uk-form-large" size = 30 align="center">
+        </div>
+
+        <div class="uk-form-row" align = "center">
+            <input type="text" placeholder="Total amount" class = "uk-form-large" size = 30 align="center">
+        </div>
+
+        <div class="uk-form-row" align = "center">
+        <select class="uk-form-width-medium" id='select'>
+            <option value='1'> Select...</option>
+            <option value='2'>Percentage payment</option>
+            <option value='3'>Equal amount</option>
+            <option value='4'>Raw amount</option>
+        </select>
+        </div>
+        <div class="uk-form-row" id="selected" align = "center">
+        </div>
+
+        <div class="uk-form-row" align = "center" >
+            <input type ="text" placeholder="Sending to:" class = "uk-form-large" size = 30 align="center">
+        </div>
+    </form>
     </div>
+    </body>
 </html>
