@@ -24,7 +24,7 @@ jQuery( document ).ready(function( $ ) {
                 var current_per;
                 $('#pAmount').keyup(function () {
                     current_per=$(this).val();
-                    if(parseInt(current_per) >= 0 && parseInt(current_per) <= 100 && !isNaN(totalAmount)){
+                    if(parseInt(current_per) >= 0 && parseInt(current_per) <= 100 && !isNaN(totalAmount) && !isNaN(current_per)){
                         var final_per=(totalAmount*current_per)/100;
                         $('#total').text("Your total: " + final_per.toFixed(2));
                      }else{
@@ -34,7 +34,7 @@ jQuery( document ).ready(function( $ ) {
 
                 $('#totalAmount').keyup(function () {
                     totalAmount=$(this).val();
-                    if(parseInt(current_per) >= 0 && parseInt(current_per) <= 100 && !isNaN(totalAmount)){
+                    if(parseInt(current_per) >= 0 && parseInt(current_per) <= 100 && !isNaN(totalAmount) && !isNaN(current_per)){
                         var final_per=(totalAmount*current_per)/100;
                         $('#total').text("Your total: " + final_per.toFixed(2));
                      }else{
@@ -51,7 +51,7 @@ jQuery( document ).ready(function( $ ) {
                 var current_no;
                 $('#eAmount').keyup(function () {
                     current_no=$(this).val();
-                    if(parseInt(current_no) >= 0 && parseInt(current_no) <= totalAmount && !isNaN(totalAmount)){
+                    if(parseInt(current_no) >= 0 && parseInt(current_no) <= totalAmount && !isNaN(totalAmount) && !isNaN(current_no)){
                         var final_share=(totalAmount/current_no);
                         $('#total').text("Your total: " + final_share.toFixed(2));
                     }else{
@@ -63,7 +63,7 @@ jQuery( document ).ready(function( $ ) {
                 $('#totalAmount').keyup(function () {
                     totalAmount=$(this).val();
                     var final_share=(totalAmount/current_no);
-                    if(parseInt(current_no) >= 0 && parseInt(current_no) <= totalAmount && !isNaN(totalAmount)){
+                    if(parseInt(current_no) >= 0 && parseInt(current_no) <= totalAmount && !isNaN(totalAmount) && !isNaN(current_no)){
                         var final_share=(totalAmount/current_no);
                         $('#total').text("Your total: " + final_share.toFixed(2));
                     }else{
@@ -80,7 +80,7 @@ jQuery( document ).ready(function( $ ) {
                 var current_raw;
                 $('#rAmount').keyup(function () {
                     current_raw= parseInt($(this).val());
-                    if(current_raw >= 0 && current_raw <= totalAmount && !isNaN(totalAmount)){
+                    if(current_raw >= 0 && current_raw <= totalAmount && !isNaN(totalAmount) && !isNaN(current_raw)){
                         $('#total').text("Your total: " + current_raw.toFixed(2));
                     }else{
                         $('#total').text("Choose a number the total evenly between 0 and the total");
@@ -89,7 +89,7 @@ jQuery( document ).ready(function( $ ) {
 
                 $('#totalAmount').keyup(function () {
                     totalAmount=$(this).val();
-                    if(parseInt(current_raw) >= 0 && parseInt(current_raw) <= totalAmount && !isNaN(totalAmount)){
+                    if(parseInt(current_raw) >= 0 && parseInt(current_raw) <= totalAmount && !isNaN(totalAmount) && !isNaN(current_per)){
                         $('#total').text("Your total: " + current_raw.toFixed(2));
                     }else{
                         $('#total').text("Choose a number the total evenly between 0 and the total");
