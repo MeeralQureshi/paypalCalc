@@ -1,4 +1,5 @@
-$( document ).ready(function() {
+$.noConflict();
+jQuery( document ).ready(function( $ ) {
     $("#selected").hide();
     console.log('Working!');
     $("#select")

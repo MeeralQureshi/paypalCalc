@@ -1,5 +1,8 @@
-<html>
+<html ng-app="payPal">
     <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+        <script src="controllers/controller.js"></script>
         <style type="text/css">
 
         body {
@@ -9,10 +12,9 @@
             }
         </style>
         <link rel="stylesheet" type="text/css" href="uikit.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script type="text/javascript" src="options.js"></script>
     </head>
-    <body background="Blue_border.png">
+    <body background="Blue_border.png" ng-controller="payCtrl">
         <div align = "center">
             <img src="PayShareLogo.png" class="my_image" align="center">
         </div>
