@@ -18,7 +18,7 @@ jQuery( document ).ready(function( $ ) {
             }
             if (val == '2') {
                 console.log(val); 
-                var percent = '<div class="uk-form-row" align = "center"><input type="text" placeholder="Percent Amount" class = "uk-form-large" size = 30 align="center" id="pAmount" ></div>'
+                var percent = '<div class="uk-form-row" align = "center"><input type="text" placeholder="Percent Amount" class = "uk-form-large" size=30 align="center" id="pAmount"></div>'
                 $( "#selected" ).html(percent);
                 $("#selected").show();
                 var current_per;
@@ -32,6 +32,8 @@ jQuery( document ).ready(function( $ ) {
                     }
                 });
 
+
+
                 $('#totalAmount').keyup(function () {
                     totalAmount=$(this).val();
                     if(parseInt(current_per) >= 0 && parseInt(current_per) <= 100){
@@ -41,7 +43,6 @@ jQuery( document ).ready(function( $ ) {
                         $('#total').text("Choose a percentage between 0 and 100");
                     }
                  });
-            
             }
 
             if (val == '3') {
@@ -102,3 +103,13 @@ jQuery( document ).ready(function( $ ) {
 
 });
 
+  // $("#pAmount").keypress(function (e) {
+  //    //if the letter is not digit then display error and don't type anything
+  //    if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+  //       //display error message
+  //       $("#errmsg").html("Digits Only").show().fadeOut("slow");
+  //              return false;
+  //       }
+  //   });
+
+// <span class="uk-form-row" id="errmsg" size=30></span>

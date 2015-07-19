@@ -8062,3 +8062,8 @@ a.uk-thumbnail:focus {
     page-break-after: avoid;
   }
 }
+
+#errmsg
+{
+color: red;
+}
