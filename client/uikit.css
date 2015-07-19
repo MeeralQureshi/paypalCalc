@@ -142,8 +142,8 @@ sub {
  */
 img {
   /* 1 */
-  max-width: 18%;
-  height: auto;
+  max-width: 294px;
+  height: 60px;
   /* 2 */
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -151,8 +151,8 @@ img {
   border: 0;
   /* 4 */
   vertical-align: middle;
-  margin-top: 220;
-  margin-left: 10;
+  margin-top: 0;
+  margin-left: 0;
 }
 /*
  * Preserve original image dimensions
