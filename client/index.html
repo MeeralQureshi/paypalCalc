@@ -24,7 +24,7 @@
         </div>
 
         <div class="uk-form-row" align = "center">
-            <input type="text" placeholder="Total amount" class = "uk-form-large" size = 30 align="center">
+            <input type="text" placeholder="Total amount" class = "uk-form-large" size = 30 align="center" id="totalAmount">
         </div>
 
         <div class="uk-form-row" align = "center">
@@ -40,12 +40,18 @@
         </div>
 
         <div class="uk-form-row" align = "center" >
-            <input type ="text" placeholder="Sending to:" class = "uk-form-large" size = 30 align="center">
+            <input type ="email" placeholder="Sending to:" class = "uk-form-large" size = 30 align="center">
+        </div>
+
+        <div class="uk-form-row" align = "center" >
+            <input type ="telp" placeholder="Phone Number:" class = "uk-form-large" size = 30 align="center">
+        </div>
+
+        <div class="uk-form-row" align = "center" id="total">
         </div>
 
         <div class="uk-form-row" align = "center">
-        	<input type="image" class "uk-button" id="payNow" name="payNow" value="payNow" src="pay_now.png" size=10> 
-
+        	<input ng-click="Submit" type="image" class "uk-button" id="payNow" name="payNow" value="payNow" src="pay_now.png" size=10 alt="Submit"> 
         </div>
     </form>
     </div>

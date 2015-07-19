@@ -151,7 +151,7 @@ img {
   border: 0;
   /* 4 */
   vertical-align: middle;
-  margin-top: 80;
+  margin-top: 220;
   margin-left: 10;
 }
 /*
@@ -8061,4 +8061,9 @@ a.uk-thumbnail:focus {
   h3 {
     page-break-after: avoid;
   }
+}
+
+#errmsg
+{
+color: red;
 }
