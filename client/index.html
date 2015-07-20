@@ -25,18 +25,23 @@
         <link rel="stylesheet" type="text/css" href="uikit.css">
         <script type="text/javascript" src="options.js"></script>
     </head>
+<<<<<<< Updated upstream
     <body ng-controller="payCtrl" align="center">
     <div class="border" align="center" margin-left="auto" margin-right"auto">
+=======
+	<form action="paypal.php" method="post">
+    <body background="Blue_border.png" ng-controller="payCtrl">
+>>>>>>> Stashed changes
         <div align = "center">
             <img src="PayShareLogo.png" class="my_image" align="center">
         </div>
 
          <div align = "center" class="uk-form-row">
-            <input type="text" placeholder="Enter Name" class = "uk-form-large" size = 30 align="center">
+            <input type="text" placeholder="Enter Name" class = "uk-form-large" size = 30 align="center" name="name">
         </div>
 
         <div class="uk-form-row" align = "center">
-            <input type="text" placeholder="Total amount" class = "uk-form-large" size = 30 align="center" id="totalAmount">
+            <input type="text" placeholder="Total amount" class = "uk-form-large" size = 30 align="center" id="totalAmount" name="amount">
         </div>
 
         <div class="uk-form-row" align = "center">
@@ -59,7 +64,7 @@
             <input type ="telp" placeholder="Phone Number:" class = "uk-form-large" size = 30 align="center">
         </div>
 
-        <div class="uk-form-row" align = "center" id="total">
+        <input class="uk-form-row" align = "center" id="total" name="boobs">
         </div>
 
         <div class="uk-form-row" align = "center">

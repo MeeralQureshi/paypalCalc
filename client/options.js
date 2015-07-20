@@ -27,6 +27,7 @@ jQuery( document ).ready(function( $ ) {
                     if(parseInt(current_per) >= 0 && parseInt(current_per) <= 100 && !isNaN(totalAmount) && !isNaN(current_per)){
                         var final_per=(totalAmount*current_per)/100;
                         $('#total').text("Your total: " + final_per.toFixed(2));
+						$('#total2').val(final_per.toFixed(2));
                      }else{
                         $('#total').text("Choose a percentage between 0 and 100");
                     }
@@ -37,6 +38,7 @@ jQuery( document ).ready(function( $ ) {
                     if(parseInt(current_per) >= 0 && parseInt(current_per) <= 100 && !isNaN(totalAmount) && !isNaN(current_per)){
                         var final_per=(totalAmount*current_per)/100;
                         $('#total').text("Your total: " + final_per.toFixed(2));
+						$('#total2').val(final_per.toFixed(2));
                      }else{
                         $('#total').text("Choose a percentage between 0 and 100");
                     }
@@ -54,6 +56,7 @@ jQuery( document ).ready(function( $ ) {
                     if(parseInt(current_no) >= 0 && parseInt(current_no) <= totalAmount && !isNaN(totalAmount) && !isNaN(current_no)){
                         var final_share=(totalAmount/current_no);
                         $('#total').text("Your total: " + final_share.toFixed(2));
+						$('#total2').val("Your total: " + final_share.toFixed(2));
                     }else{
                         $('#total').text("Choose a number the total evenly between 0 and the total");
                     }
@@ -66,6 +69,7 @@ jQuery( document ).ready(function( $ ) {
                     if(parseInt(current_no) >= 0 && parseInt(current_no) <= totalAmount && !isNaN(totalAmount) && !isNaN(current_no)){
                         var final_share=(totalAmount/current_no);
                         $('#total').text("Your total: " + final_share.toFixed(2));
+						$('#total2').val("Your total: " + final_share.toFixed(2));
                     }else{
                         $('#total').text("Choose a number the total evenly between 0 and the total");
                     }
@@ -80,8 +84,15 @@ jQuery( document ).ready(function( $ ) {
                 var current_raw;
                 $('#rAmount').keyup(function () {
                     current_raw= parseInt($(this).val());
+<<<<<<< Updated upstream
                     if(current_raw >= 0 && current_raw <= totalAmount && !isNaN(totalAmount) && !isNaN(current_raw)){
                         $('#total').text("Your total: " + current_raw.toFixed(2));
+=======
+                    if(current_raw >= 0 && current_raw <= totalAmount && !isNaN(totalAmount)){
+                        $('#total').val("Your total: " + current_raw.toFixed(2));
+						$('#total2').val(current_raw.toFixed(2));
+
+>>>>>>> Stashed changes
                     }else{
                         $('#total').text("Choose a number the total evenly between 0 and the total");
                     }
@@ -91,6 +102,7 @@ jQuery( document ).ready(function( $ ) {
                     totalAmount=$(this).val();
                     if(parseInt(current_raw) >= 0 && parseInt(current_raw) <= totalAmount && !isNaN(totalAmount) && !isNaN(current_per)){
                         $('#total').text("Your total: " + current_raw.toFixed(2));
+						$('#total2').val(current_raw.toFixed(2));
                     }else{
                         $('#total').text("Choose a number the total evenly between 0 and the total");
                     }
@@ -100,7 +112,6 @@ jQuery( document ).ready(function( $ ) {
     })
 
 });
-
   // $("#pAmount").keypress(function (e) {
   //    //if the letter is not digit then display error and don't type anything
   //    if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {

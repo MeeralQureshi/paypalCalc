@@ -5,7 +5,7 @@ var app = express();
 var path = require('path');
 
 // app.use(express.static(__dirname='/../client'));
-var pathName = '/Users/udaraweerasinghege/personal/BattleHacks/paypalCalc/client'
+var pathName = 'c:/Users/anam/documents/github/paypalCalc/client';
 
 app.use(express.static(pathName));
 
